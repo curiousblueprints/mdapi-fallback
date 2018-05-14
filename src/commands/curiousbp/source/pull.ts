@@ -4,9 +4,9 @@ import { sfdxCmd }            from '../../../helpers/sfdxCmd';
 import { fileCmd }            from '../../../helpers/fileCmd';
 
 core.Messages.importMessagesDirectory(__dirname);
-const messages = core.Messages.loadMessages('mdapiFallback', 'org');
+const messages = core.Messages.loadMessages('mdapi-fallback', 'org');
 
-export default class Org extends SfdxCommand {
+export default class Pull extends SfdxCommand {
 
   public static description = messages.getMessage('commandDescription');
   public static examples = [];
