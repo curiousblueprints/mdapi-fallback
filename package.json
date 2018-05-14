@@ -1,0 +1,60 @@
+{
+  "name": "mdapiFallback",
+  "description": "SFDX plugin that allows users to specify metadatat types that should be pushed/pulled with MDAPI allowing for seamless  useof SFDX withincompatbile types.",
+  "version": "0.0.0",
+  "author": "Cameron Ames @curiousblueprints",
+  "bugs": "https://github.com/curiousblueprints/mdapiFallback/issues",
+  "dependencies": {
+    "@oclif/command": "^1.4.21",
+    "@oclif/config": "^1.6.17",
+    "@oclif/errors": "^1.0.9",
+    "@salesforce/command": "^0.1.2",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.13.19",
+    "@oclif/plugin-help": "^1.2.10",
+    "@oclif/test": "1",
+    "@salesforce/dev-config": "^1.0.4",
+    "@types/chai": "4",
+    "@types/jsforce": "^1.8.10",
+    "@types/mocha": "5",
+    "@types/node": "9",
+    "chai": "4",
+    "globby": "^8.0.1",
+    "mocha": "5",
+    "sinon": "^5.0.7",
+    "ts-node": "5",
+    "tslib": "1",
+    "typescript": "2.8"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    ".oclif.manifest.json",
+    "/lib",
+    "/messages"
+  ],
+  "homepage": "https://github.com/curiousblueprints/mdapiFallback",
+  "keywords": [
+    "sfdx-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./lib/commands",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "curiousblueprints/mdapiFallback",
+  "scripts": {
+    "postpack": "rm -f .oclif.manifest.json",
+    "posttest": "tsc -p test --noEmit && tslint -p test -t stylish",
+    "prepack": "rmdir /S /Q lib && tsc && oclif-dev manifest && oclif-dev readme",
+    "prepare": "rmdir /S /Q lib && tsc && oclif-dev manifest && oclif-dev readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "./types.d.ts"
+}

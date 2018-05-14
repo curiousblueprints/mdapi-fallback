@@ -1,0 +1,3 @@
+{
+  "commandDescription": "Retrieves metadata using both the Metadata API and SFDX depending on what you have specified."
+}

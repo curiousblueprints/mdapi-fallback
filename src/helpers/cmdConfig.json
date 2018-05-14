@@ -1,0 +1,27 @@
+{
+    "force:mdapi:retrieve" : {
+        "args": [
+          "a", "w", "r", "k", "d", "p", "s", "i", "u",
+          "apiversion",
+          "wait",
+          "retrievetargetdir",
+          "unpackaged",
+          "sourcedir",
+          "packagenames",
+          "jobid",
+          "targetusername",
+          "json",
+          "loglevel",
+          "verbose"
+        ]
+    },
+    "force:source:pull" : {
+        "args": [
+            "w", "f", "u",
+            "wait",
+            "targetusername",
+            "json",
+            "loglevel"
+        ]
+    }
+}
