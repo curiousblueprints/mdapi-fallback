@@ -1,9 +1,9 @@
 {
-  "name": "mdapiFallback",
+  "name": "mdapi-fallback",
   "description": "SFDX plugin that allows users to specify metadatat types that should be pushed/pulled with MDAPI allowing for seamless  useof SFDX withincompatbile types.",
   "version": "0.0.0",
   "author": "Cameron Ames @curiousblueprints",
-  "bugs": "https://github.com/curiousblueprints/mdapiFallback/issues",
+  "bugs": "https://github.com/curiousblueprints/mdapi-fallback/issues",
   "dependencies": {
     "@oclif/command": "^1.4.21",
     "@oclif/config": "^1.6.17",
@@ -36,7 +36,7 @@
     "/lib",
     "/messages"
   ],
-  "homepage": "https://github.com/curiousblueprints/mdapiFallback",
+  "homepage": "https://github.com/curiousblueprints/mdapi-fallback",
   "keywords": [
     "sfdx-plugin"
   ],
