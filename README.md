@@ -1,7 +1,10 @@
-mdapiFallback
+mdapi-fallback
+
+Use in the exact same way you would `sfdx force:source:pull`, but it will also use the Metadata API to pull items that are problematic for you in SFDX.
+
 =============
 
-SFDX plugin that allows users to specify metadatat types that should be pushed/pulled with MDAPI allowing for seamless  useof SFDX withincompatbile types.
+SFDX plugin that allows users to specify metadata types that should be pushed/pulled with MDAPI allowing for seamless use of SFDX with incompatbile types.
 
 [![Version](https://img.shields.io/npm/v/mdapiFallback.svg)](https://npmjs.org/package/mdapiFallback)
 [![CircleCI](https://circleci.com/gh/curiousblueprints/mdapiFallback/tree/master.svg?style=shield)](https://circleci.com/gh/curiousblueprints/mdapiFallback/tree/master)
@@ -18,27 +21,27 @@ SFDX plugin that allows users to specify metadatat types that should be pushed/p
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g mdapiFallback
-$ mdapiFallback COMMAND
+$ npm install -g mdapi-fallback
+$ mdapi-fallback COMMAND
 running command...
-$ mdapiFallback (-v|--version|version)
-mdapiFallback/0.0.0 win32-x64 node-v9.11.1
-$ mdapiFallback --help [COMMAND]
+$ mdapi-fallback (-v|--version|version)
+mdapi-fallback/0.0.0 win32-x64 node-v9.11.1
+$ mdapi-fallback --help [COMMAND]
 USAGE
-  $ mdapiFallback COMMAND
+  $ mdapi-fallback COMMAND
 ...
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`mdapiFallback curiousbp:source:pull`](#mdapi-fallback-curiousbpsourcepull)
+* [`mdapi-fallback curiousbp:source:pull`](#mdapi-fallback-curiousbpsourcepull)
 
-## `mdapiFallback curiousbp:source:pull`
+## `mdapi-fallback curiousbp:source:pull`
 
 Retrieves metadata using both the Metadata API and SFDX depending on what you have specified.
 
 ```
 USAGE
-  $ mdapiFallback curiousbp:source:pull
+  $ mdapi-fallback curiousbp:source:pull
 
 OPTIONS
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
